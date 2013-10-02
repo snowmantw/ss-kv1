@@ -1,4 +1,5 @@
 reference
+node_modules
 *.swp
 config.local.json
 legacy

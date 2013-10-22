@@ -1,0 +1,96 @@
+body
+{
+
+}
+
+#navbar
+{
+  margin: 0 auto;
+  max-width: 120rem;
+  min-width: 100rem;
+}
+
+#container
+{
+  height: 70rem;
+  margin: 0px auto;
+  max-width: 120rem;
+  min-width: 100rem;
+}
+
+#container > div
+{
+  height: 100%;
+}
+
+#main-view
+{
+  border-left: 1px solid #DDD;
+}
+
+#tool-tabs a
+{
+  /* To prevent the tabls click with outline.*/
+  outline: none;
+}
+
+#tool-panels
+{
+  border: 1px solid #DDD;
+  border-top: none;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  /* 100% - tabs */
+  height: calc(100% - 4.2rem);
+  padding: 0.5rem 0.5rem;
+}
+
+#tool-panels .tab-pane
+{
+
+}
+
+#toolbar-activities
+{
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.toolbar-mainview
+{
+  float: left;
+  position: relative;
+  left: -7.7rem;
+  top: 1rem;
+  width: 3rem;
+}
+
+.toolbar-mainview > ul
+{
+  list-style: none;
+  text-align: center;
+}
+
+#toolbar-courses li
+{
+  margin-bottom: 1.2rem;
+}
+
+#toolbar-courses li span
+{
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+}
+.activity-detail-mainframe-note .note-title
+{
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 2rem;
+}
+
+.activity-detail-mainframe-note .note-title h1
+{
+  font-size: 20pt;
+}

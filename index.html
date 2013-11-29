@@ -6,6 +6,8 @@
     <title>SocialStudy KV1 Project</title>
     <link rel="stylesheet" href="/library/bootstrap/css/bootstrap-journal.min.css" media="screen">
     <link rel="stylesheet" href="/styles/main.css" media="screen">
+    <link rel="stylesheet" href="/styles/note.css" media="screen">
+    <link rel="stylesheet" href="/styles/activities.css" media="screen">
     <script defer type="text/javascript" src="/library/jquery/jquery.js"></script>
     <script defer type="text/javascript" src="/library/underscore/underscore.js"></script>
     <script defer type="text/javascript" src="/library/bootstrap/js/bootstrap.js"></script>
@@ -85,7 +87,8 @@
           <span class="label label-danger">Danger</span>
           <span class="label label-info">Info</span>
         </div>
-        Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
+        <ul id="list-activities">
+        </ul>
       </div>
       <div id="chat" class="tab-pane fade">
         Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
@@ -114,7 +117,7 @@
 <script id="template-activity-detail-mainframe-note" data-role="template" type="text/x-template">
   <div class="activity-detail-mainframe activity-detail-mainframe-note">
     <div class="note-title">
-      <h1><%= _title_ %></h1>
+      <span><%= _title_ %></span>
     </div>
     <div class="note-wrapper">
       <%= _html_note_ %>
@@ -123,6 +126,7 @@
 </script>
 
 <script id="template-demo-note" data-role="template" type="text/x-template">
+<p>Paragraphs are separated by a blank line.</p>
 <a href="#an-h1-header">An h1 header</a></h1>
 <p>Paragraphs are separated by a blank line.</p>
 <p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, <code>monospace</code>. Itemized lists look like:</p>
@@ -138,5 +142,15 @@
 </blockquote>
 <p>Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex. “it’s all in chapters 12–14”). Three dots … will be converted to an ellipsis.</p>
 <h2 id="an-h2-header">
+</script>
+<script id="template-activity-summary" type="text/x-template" date-role="template">
+<li id="<%= _id_ %>" class="activity shared">
+<div class="title"><%= _title_ %></div>
+<div class="content">
+  <div class="datetime"><%= _datetime_ %></div>
+  <div class="author"><%= _author_ %></div>
+  <div class="digest"><%= _digest_ %></div>
+</div>
+</li>
 </script>
 </html>

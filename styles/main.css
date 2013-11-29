@@ -84,13 +84,3 @@ body
   cursor: pointer;
   transform: scale(1.2, 1.2);
 }
-.activity-detail-mainframe-note .note-title
-{
-  border-bottom: 1px solid #DDD;
-  margin-bottom: 2rem;
-}
-
-.activity-detail-mainframe-note .note-title h1
-{
-  font-size: 20pt;
-}

@@ -1,0 +1,24 @@
+.activity-detail-mainframe-note .note-title span
+{
+  margin-left: -3rem; /*fix strange padding-left*/
+  font-size: 18pt;
+  color: black;
+  font-family: "News Cycle","Arial Narrow Bold",sans-serif;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.activity-detail-mainframe-note .note-title
+{
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 2rem;
+}
+
+.activity-detail-mainframe-note .note-wrapper .fix-first 
+{
+  text-indent: -3rem;
+}

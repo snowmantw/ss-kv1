@@ -1,0 +1,45 @@
+#list-activities
+{
+  padding-left: 0px;
+}
+
+#list-activities li
+{
+  border-bottom: 1px #CCC solid;
+  list-style-type: none;
+}
+
+#list-activities li.shared .title
+{
+  background-color: #22b24c;
+}
+
+#list-activities li.chat .title
+{
+  background-color: #f57a00;
+}
+
+#list-activities li.system .title
+{
+  background-color: #369;
+}
+
+#list-activities .title
+{
+  font-weight: 700;
+  font-family: "News Cycle","Arial Narrow Bold",sans-serif;
+  color: white;
+  line-height:18pt;
+  padding-left: 1rem;
+}
+
+#list-activities li .content
+{
+  display: none;
+  padding-left: 1rem;
+}
+
+#list-activities li .content.show
+{
+  display: block;
+}

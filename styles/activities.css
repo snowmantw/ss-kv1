@@ -1,3 +1,9 @@
+#wrapper-list-activities
+{
+  height: 60rem;
+  overflow-y: auto;
+}
+
 #list-activities
 {
   padding-left: 0px;
@@ -29,6 +35,7 @@
   font-weight: 700;
   font-family: "News Cycle","Arial Narrow Bold",sans-serif;
   color: white;
+  cursor: pointer;
   line-height:18pt;
   padding-left: 1rem;
 }

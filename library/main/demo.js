@@ -21,7 +21,7 @@ window.Demo =
             .done()
     }
 
-    ,activities_stream: function dm_activities_stream()
+    ,activities_stream: function dm_activities_stream(category)
     {
         var mock_note_summary = 
           { '_title_': "Lorem Ipsum Note Title Dummy Mock Void Null"
@@ -29,6 +29,7 @@ window.Demo =
           , '_datetime_': Date.now()
           , '_author_': "Bocha Uois"
           , '_id_': 'some-mock-activity-hashid-can-be-retrived'
+          , '_category_': category
           }
         var msg =
           { 'head': 
@@ -54,10 +55,19 @@ window.Demo =
               {
                 content.addClass('show')
               }
-
               return '_'
-            }).done()
-          }).done()
+            })
+            .done()
+          })
+          .tie(function() {
+            return UI(this.activity).$().select('.content .expand').forward('click', function(e) {
+              $('#stream-activities').empty()
+              Demo.activities_detail_note()()
+              return '_'
+            })
+            .done()
+          })
+          .done()
     }
         
 }
